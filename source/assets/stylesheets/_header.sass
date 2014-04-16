@@ -1,0 +1,40 @@
+#header
+  +row
+  +pad(3rem)
+  background-color: $color5
+
+  .header-name
+    +span-columns(7)
+
+    h1
+      font-size: 4rem
+      color: $color1
+    p
+      color: $color2
+      letter-spacing: .1rem
+      &:before
+        content: "{"
+      &:after
+        content: "}"
+
+  #header-info
+    +span-columns(4)
+    font-size: .8rem
+    color: #fff
+
+    .label
+      font-size: .6rem
+      display: block
+      color: #ddd
+
+    .info
+      margin-bottom: .3rem
+
+    a
+      color: #fff
+
+#border-header
+  height: 2rem
+  +background-size(2rem 2rem)
+  background-repeat: repeat-x
+  background-image:  -webkit-linear-gradient(-45deg, $color5 25%, transparent 25%, transparent), -webkit-linear-gradient(45deg, transparent 75%, $color5 75%)
